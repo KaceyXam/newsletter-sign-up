@@ -79,4 +79,5 @@ strong {
 	color: var(--white);
 	text-decoration: none;
 	text-align: center;
+	border: none;
 }
