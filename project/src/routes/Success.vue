@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useEmailStore } from "../stores/email";
+import { useEmailStore } from "@/stores/email";
 
 const emailStore = useEmailStore();
 </script>
