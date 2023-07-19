@@ -1,4 +1,13 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@font-face {
+	font-family: RobotoBold;
+	src: url("/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url("/fonts/Roboto-Regular.ttf");
+}
+
 :root {
 	--tomato-red: hsl(4, 100%, 67%);
 	--dark-slate-grey: hsl(234, 29%, 20%);
@@ -43,6 +52,11 @@ button {
 
 body {
 	background: var(--dark-slate-grey);
+	font-family: RobotoRegular;
+}
+
+h1 {
+	font-family: RobotoBold;
 }
 
 #app {
