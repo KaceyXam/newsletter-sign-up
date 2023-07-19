@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useEmailStore } from "../stores/email";
+
+const emailStore = useEmailStore();
+</script>
 
 <template>
 	<main class="success-box">
@@ -6,8 +10,8 @@
 		<h1>Thanks for Subscribing!</h1>
 		<p>
 			A confirmation email has been sent to
-			<strong>ash@loremcompany.com</strong>. Please open it and click the button
-			inside to confirm your subscription.
+			<strong>{{ emailStore.email }}</strong>
+			. Please open it and click the button inside to confirm your subscription.
 		</p>
 		<a href="/" class="btn-secondary">Dismiss message</a>
 	</main>
