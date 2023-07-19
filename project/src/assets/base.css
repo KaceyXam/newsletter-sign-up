@@ -59,8 +59,24 @@ h1 {
 	font-family: RobotoBold;
 }
 
+strong {
+	font-family: RobotoBold;
+}
+
 #app {
 	display: grid;
 	place-content: center;
 	min-height: 100vh;
+}
+
+.btn-secondary {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+	border-radius: 0.5em;
+	background: var(--dark-slate-grey);
+	color: var(--white);
+	text-decoration: none;
+	text-align: center;
 }
