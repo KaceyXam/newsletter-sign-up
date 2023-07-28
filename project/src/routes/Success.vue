@@ -35,4 +35,22 @@ const emailStore = useEmailStore();
 .success-box h1 {
 	font-size: 4rem;
 }
+
+@media (max-width: 900px) {
+	.success-box {
+		width: 100%;
+		padding: 2em;
+		min-height: 100vh;
+		justify-content: flex-end;
+		border-radius: 0;
+	}
+
+	.success-box .btn-secondary {
+		margin-top: 100%;
+	}
+
+	.success-box h1 {
+		font-size: 3rem;
+	}
+}
 </style>
