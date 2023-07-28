@@ -54,7 +54,16 @@ function formSubmit(e: Event) {
 				<button class="btn-secondary">Subscribe to monthly newsletter</button>
 			</form>
 		</section>
-		<img src="/images/illustration-sign-up-desktop.svg" alt="Sign Up Graphic" />
+		<img
+			class="sign-up-img desktop"
+			src="/images/illustration-sign-up-desktop.svg"
+			alt="Sign Up Graphic"
+		/>
+		<img
+			class="sign-up-img mobile"
+			src="/images/illustration-sign-up-mobile.svg"
+			alt="Sign Up Graphic"
+		/>
 	</main>
 </template>
 
@@ -123,5 +132,31 @@ function formSubmit(e: Event) {
 	padding: 1em;
 	border: var(--grey) 1px solid;
 	border-radius: 0.5em;
+}
+
+.mobile {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.update-box {
+		grid-template-columns: auto;
+		padding: 0;
+		min-height: 100vh;
+		border-radius: 0;
+	}
+
+	.sign-up-img {
+		width: 100%;
+		grid-row: 1;
+	}
 }
 </style>
